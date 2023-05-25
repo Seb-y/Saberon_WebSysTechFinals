@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/9a9c1ff800.js" crossorigin="anonymous"></script>
+
+        <title>My Personal Portfolio</title>
+    </head>
+    <body>
+
+         <!--:::::::::::::::::::::-Header-::::::::::::::::::::-->
+         <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="img/logo.png" class="logo" alt="logo">
+                    <ul id="sidemenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>UI/UX Designer</p>
+                    <h1>Get to know me<span> Better</span><br> Currently a BSIT - 2C <br>Student</h1>
+                </div>
+            </div>
+        </div>
+
+        <!--:::::::::::::::::::::-About-::::::::::::::::::::-->
+        <div id="about">
+            <div class="a-container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="img/PIC.png" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h2 class="sub-title">About Me</h2>
+                        <p>My name is Amir Sebastian S. Saberon. Currently studying as a BS Information Technology Student from Bicol University Main Campus, College of Science.
+                            I am hoping on becoming a UI / UX designer. I'm really passionate about improving customer satisfaction, and loyalty through
+                            the utility, ease of use, and pleasure provided in the interaction with a product. With these goals in mind, I'm always looking 
+                            for new ways to learn and improve my skills.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI / UX</span><br>Designing Web Applications Interfaces</li>
+                                <li><span>Graphic Designer</span><br>Commuicating Ideas that Captivates Consumers</li>
+                                <li><span>Social Media Marketing Manager</span><br>Implementing Effective Social Media Content Strategies for Companies</li>
+                                <li><span>Data Analyst</span><br>Generates Information to Help Make Decisions</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2019</span><br>Social Media Marketing Manager for The Vittles</li>
+                                <li><span>2019</span><br>Editor-in-Chief for Salapi First Edition</li>
+                                <li><span>2021</span><br>Editor-in-Chief for Kaligiran</li>
+                                <li><span>2021</span><br>Editor-in-Chief for Ruination Vol. 1</li>
+                                <li><span>2022</span><br>UI / UX Design Executive for Estetik.co</li>
+                                <li><span>2022</span><br>Lead Developer for Chasing Clouds.Ltd</li>
+                                <li><span>2023</span><br>Data Analyst for School Base Feeding Program (San Francisco Learning Center, Malilipot Albay)  Database</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2007 - 2013</span><br>Salle Learning Center Inc. (Primary Education)</li>
+                                <li><span>2013 - 2019</span><br>Polangui General Comprehensive High School (Secondary Education)</li>
+                                <li><span>2020 - Present</span><br>Bicol University Main Campus, College of Science</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Amir Saberon. Made with <i class="fa-regular fa-heart"></i> Easy Tutorials</p>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="about.js"></script>
+    </body>
+</html>
+

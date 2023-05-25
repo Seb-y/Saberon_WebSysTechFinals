@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/9a9c1ff800.js" crossorigin="anonymous"></script>
+
+        <title>My Personal Portfolio</title>
+    </head>
+    <body>
+
+        <!--:::::::::::::::::::::-Header-::::::::::::::::::::-->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="img/logo.png" class="logo" alt="logo">
+                    <ul id="sidemenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>UI/UX Designer</p>
+                    <h1>Let's talk <span> Now</span><br> And make <span>Visions </span><br>A <span>Reality</span></h1>
+                </div>
+            </div>
+        </div>
+
+        <!--:::::::::::::::::::::-Contact-::::::::::::::::::::-->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h3 class="sub-title">Contact Me</h3>
+                        <p><i class="fa-solid fa-paper-plane"></i>mingsebastian19@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>+639460696350</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/amirsebastian.saberon.5/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/sebyiah/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/Seb-y/Web-Sys--Dev"><i class="fa-brands fa-square-github"></i></a>
+                            <a href="https://www.youtube.com/channel/UC1c0Jg81Ji5vbXnr5gt9J7Q"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <a href="css/images/My-CV.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form action="contact.php" method="post">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <button onclick="send()" type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Amir Saberon. Made with <i class="fa-regular fa-heart"></i> Easy Tutorials</p>
+        </div>
+
+        <script src="script.js"></script>
+
+        <script>
+            function send() {
+              var txt;
+              if (confirm("Do you want to send the Message?")) {
+                txt = "Message Sent";
+              } else {
+                txt = "You can Always contact me thru my details";
+              }
+            document.getElementById("contact").innerHTML = txt;
+            }
+            </script>
+
+    </body>
+</html>
