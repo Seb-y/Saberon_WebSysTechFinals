@@ -13,7 +13,6 @@
 		$stmt = $conn->prepare("insert into registration(name, message, email) values(?, ?, ?)");
 		$stmt->bind_param("sss", $name, $message, $email);
 		$execval = $stmt->execute();
-        echo "Message Sent Successfully.";
 		header ("Location: contact.html");
 		$stmt->close();
 		$conn->close();

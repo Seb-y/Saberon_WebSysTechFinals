@@ -55,7 +55,7 @@
                             <input type="text" name="name" placeholder="Your Name" required>
                             <input type="email" name="email" placeholder="Your Email" required>
                             <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                            <button onclick="send()" type="submit" class="btn btn2">Submit</button>
+                            <button type="submit" class="btn btn2">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -66,18 +66,5 @@
         </div>
 
         <script src="script.js"></script>
-
-        <script>
-            function send() {
-              var txt;
-              if (confirm("Do you want to send the Message?")) {
-                txt = "Message Sent";
-              } else {
-                txt = "You can Always contact me thru my details";
-              }
-            document.getElementById("contact").innerHTML = txt;
-            }
-            </script>
-
     </body>
 </html>
